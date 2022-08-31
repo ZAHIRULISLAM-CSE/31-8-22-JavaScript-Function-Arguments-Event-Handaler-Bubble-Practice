@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="one">Click me 1</button>
+    <button id="two">Click me 2</button>
+    <button id="three">Click me 3</button>
+    <button id="four">Click me 4</button>
+
+    <script>
+    /*function handle(){
+        alert("Dont Click Me,Iam Virus");
+    }*/
+    //3rd Approach is Given Below:
+     var edit= document.getElementById("one").addEventListener("click",function(){
+        alert("Dont Click")
+     })
+     //edit.onclick=handle;//This is First Approach
+     //edit.addEventListener("click",handle);//This is Second Approach
+
+    </script>
+
+</body>
+</html>

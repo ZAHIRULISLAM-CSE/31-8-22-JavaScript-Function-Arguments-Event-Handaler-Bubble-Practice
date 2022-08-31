@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Bubble</title>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <h1>My List</h1>
+            <ul id="abc">
+                <li class="item">ABC</li>
+                <li class="item">FGG</li>
+                <li class="item">RGH</li>
+                <li class="item">TYI</li>
+            </ul>
+        </div>
+        <button id="button">Add item</button>
+    </div>
+
+    <script>
+        /*var element=document.getElementsByClassName("item");
+        for(i=0;i<element.length;i++){
+            var del =element[i];
+            del.addEventListener("click",function(event){
+               // console.log('busy')
+                event.target.parentNode.removeChild(event.target);
+            })
+             
+        }*/
+
+        var btn=document.getElementById("button");
+        btn.addEventListener("click",function(event){
+          var parent=document.getElementById("abc");
+          var item=document.createElement("li");
+          item.innerText="hi i added"
+          parent.appendChild(item);
+        })
+
+
+        var ele=document.getElementById("abc");
+            ele.addEventListener("click",function(event){
+              // console.log(event.target);
+                event.target.parentNode.removeChild(event.target);
+            })
+             
+    </script>
+
+</body>
+</html>

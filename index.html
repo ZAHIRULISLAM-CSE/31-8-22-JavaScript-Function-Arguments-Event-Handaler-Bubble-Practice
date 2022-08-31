@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="joy">
+    <p class="abc">my name is Joy</p>
+    <p class="abc">my name is fdsg</p>
+    <p class="abc">my name is dhjxcygk</p>
+
+</div>
+
+    <div class="row"></div>
+    <p class="abc">Iam A good Boy</p>
+    <h1>Go Ahead</h1>
+</div>
+    <script>
+      var edit=document.querySelectorAll(".container .abc");
+      for(i=0;i<edit.length;i++){
+        edit[i].style.color='green';
+        edit[i].style.backgroundColor='yellow';
+      }
+      //add element using Java Script
+     var edit1= document.getElementById("joy");
+     var paragraph=document.createElement('p');
+     paragraph.innerHTML=("lets Go")
+     edit1.appendChild(paragraph);
+
+     var edit2=document.getElementById('joy');
+     var p=document.createElement("h1");
+     p.innerHTML="mistake"
+     edit2.appendChild(p);
+    </script>
+</body>
+</html>
